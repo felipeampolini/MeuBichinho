@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, TextInput, TouchableHighlight, StyleSheet, Text} from 'react-native'
+import {View, TextInput, TouchableHighlight, StyleSheet, Text, Image} from 'react-native'
 import { withNavigation } from 'react-navigation'
 
 export class LoginScreen extends React.Component {
@@ -8,7 +8,14 @@ export class LoginScreen extends React.Component {
     render() {
         return (
         <View>
-            <Text style={styles.loginSenha}>Usuario</Text>
+            {/*<Image*/}
+                {/*style={{width: 50, height: 50}}*/}
+                {/*source={require('./../images/iconMomentanea.PNG')}*/}
+            {/*/>*/}
+
+            <Text style={styles.LogoText}>Meu Bichinho</Text>
+
+            <Text style={styles.loginSenha}>Email</Text>
             <TextInput
                 editable = {true}
                 autoCapitalize = 'none'
@@ -38,6 +45,10 @@ export class LoginScreen extends React.Component {
             >
             </TextInput>
 
+            <TouchableHighlight onPress={() => {this.props.navigation.replace('RecuperarSenhaScreen')}}>
+                <Text style={styles.esqueceuSenha}>Esqueceu sua senha?</Text>
+            </TouchableHighlight>
+
             <TouchableHighlight onPress={() => {
                 this.props.navigation.replace('MainScreen')
                 }} style={styles.login}>
@@ -50,9 +61,9 @@ export class LoginScreen extends React.Component {
                 <Text style={styles.faceText}>Login com Facebook</Text>
             </TouchableHighlight>
 
-            <Text>Você não possui uma conta?</Text>
-            <TouchableHighlight onPress={() => {this.props.navigation.replace('MainScreen')}}> //MUDAR POR TELA DE CADASTRO
-                <Text>Cadastre-se</Text>
+            <Text style={styles.temConta}>Você não possui uma conta?</Text>
+            <TouchableHighlight onPress={() => {this.props.navigation.replace('MainScreen')}}>
+                <Text style={styles.cadastrar}>Cadastre-se</Text>
             </TouchableHighlight>
 
         </View>
@@ -63,7 +74,18 @@ export class LoginScreen extends React.Component {
 export default withNavigation(LoginScreen);
 
 const styles = StyleSheet.create({
-    loginSenha:{
+    LogoText: {
+        fontSize: 30,
+        fontWeight: 'bold',
+        width: '33%',
+        marginLeft: '33%',
+        marginRight: '33%',
+    },
+    esqueceuSenha:{
+        textAlign: 'right',
+        marginRight: '10%'
+    },
+    loginSenha: {
         width: '80%',
         marginLeft: '10%',
         marginRight: '10%',
@@ -95,5 +117,16 @@ const styles = StyleSheet.create({
     },
     faceText: {
         color: 'white'
+    },
+    temConta: {
+        marginTop: 30,
+        color: 'grey',
+        marginLeft: '10%',
+    },
+    cadastrar: {
+        textAlign: 'right',
+        marginTop: -19,
+        marginRight: '17%',
+        color: 'brown',
     }
 })

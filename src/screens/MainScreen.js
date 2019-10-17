@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from 'react-native'
 import Component1 from '../components/Component1'
-import Newsfeed from '../components/Newsfeed'
+import Publicacoes from '../components/Publicacoes'
 import Carteirinha from '../components/Carteirinha'
 import Configuracoes from '../components/Configuracoes'
 import Home from '../components/Home'
@@ -20,10 +20,10 @@ export default createMaterialBottomTabNavigator({
             )
         }
     },
-    Newsfeed: {
-        screen: Newsfeed,
+    Publicacoes: {
+        screen: Publicacoes,
         navigationOptions: {
-            tabBarLabel: 'Newsfeed',
+            tabBarLabel: 'Publicacoes',
             tabBarIcon:({tintColor}) => (
                 <Icon name="bell-outline" color={tintColor} size={24}></Icon>
             )
@@ -38,7 +38,7 @@ export default createMaterialBottomTabNavigator({
     //         )
     //     }
     // },
-    Component3: {
+    Carteirinha: {
         screen: Carteirinha,
         navigationOptions: {
             tabBarLabel: 'Carteirinha',
@@ -47,10 +47,10 @@ export default createMaterialBottomTabNavigator({
             )
         }
     },
-    Component4: {
+    Configuracoes: {
         screen: Configuracoes,
         navigationOptions: {
-            tabBarLabel: 'Componente 4',
+            tabBarLabel: 'Configuracoes',
             tabBarIcon:({tintColor}) => (
                 <Icon name="pencil" color={tintColor} size={24}></Icon>
             )
