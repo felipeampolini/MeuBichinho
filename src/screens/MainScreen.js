@@ -29,15 +29,15 @@ export default createMaterialBottomTabNavigator({
             )
         }
     },
-    // CamComponent: {
-    //     screen: CamComponent,
-    //     navigationOptions: {
-    //         tabBarLabel: 'Cam Component',
-    //         tabBarIcon:({tintColor}) => (
-    //             <Icon name="calendar" color={tintColor} size={24}></Icon>
-    //         )
-    //     }
-    // },
+    CamComponent: {
+        screen: CamComponent,
+        navigationOptions: {
+            tabBarLabel: 'Cam Component',
+            tabBarIcon:({tintColor}) => (
+                <Icon name="calendar" color={tintColor} size={24}></Icon>
+            )
+        }
+    },
     Carteirinha: {
         screen: Carteirinha,
         navigationOptions: {

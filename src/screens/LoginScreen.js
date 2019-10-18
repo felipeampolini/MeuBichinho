@@ -62,7 +62,7 @@ export class LoginScreen extends React.Component {
             </TouchableHighlight>
 
             <Text style={styles.temConta}>Você não possui uma conta?</Text>
-            <TouchableHighlight onPress={() => {this.props.navigation.replace('MainScreen')}}>
+            <TouchableHighlight onPress={() => {this.props.navigation.replace('CadastroScreen')}}>
                 <Text style={styles.cadastrar}>Cadastre-se</Text>
             </TouchableHighlight>
 
@@ -125,7 +125,6 @@ const styles = StyleSheet.create({
     },
     cadastrar: {
         textAlign: 'right',
-        marginTop: -19,
         marginRight: '17%',
         color: 'brown',
     }

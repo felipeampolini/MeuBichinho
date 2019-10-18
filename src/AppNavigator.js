@@ -5,10 +5,17 @@ import { createAppContainer } from 'react-navigation'
 import LoginScreen from './screens/LoginScreen'
 import MainScreen from './screens/MainScreen'
 import RecuperarSenhaScreen from './screens/RecuperarSenhaScreen'
+import CadastroScreen from './screens/CadastroScreen'
 
 const stack = createStackNavigator({
     LoginScreen: {
         screen: () => <LoginScreen navigation={this.navigation} />
+    },
+    CadastroScreen: {
+        screen: CadastroScreen,
+        navigationOptions: {
+            header: null,
+        }
     },
     RecuperarSenhaScreen: {
         screen: RecuperarSenhaScreen,
