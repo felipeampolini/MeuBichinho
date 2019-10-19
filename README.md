@@ -42,7 +42,8 @@
     fazer build da aplicação
     react-native run-android
 
-# 3 - Instalar gitbash
+# 3 - Instalar gitbash (no windows)
+[GitBash](https://gitforwindows.org/)
 
 # 4 - Clonando projeto
 1. Ir para pasta desejada
