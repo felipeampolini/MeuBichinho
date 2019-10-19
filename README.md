@@ -11,7 +11,7 @@
 # 4 - Clonando projeto
 1. Ir para pasta desejada
 2. Botao direito, git bash here, 
-3. Dar o comando: ``it clone https://gitlab.com/felipeampolini/appmeubichinho.git`
+3. Dar o comando: `git clone https://gitlab.com/felipeampolini/appmeubichinho.git`
 
 # 5 - Atualizando npm do projeto
 1. Ir para pasta do projeto clonado
