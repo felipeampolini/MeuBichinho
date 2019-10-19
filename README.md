@@ -61,3 +61,9 @@ https://github.com/facebook/react-native/issues/25629
 
 Va para pasta \android\app
 rodar comando: `keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000`
+
+# 7 - Se der pau no react-native start : voltar versao do node
+
+* no powershell com admin
+`choco uninstall nodejs`
+`choco install nodejs --version=12.10.0`
