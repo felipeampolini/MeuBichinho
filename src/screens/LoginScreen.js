@@ -8,10 +8,10 @@ export class LoginScreen extends React.Component {
     render() {
         return (
         <View>
-            {/*<Image*/}
-                {/*style={{width: 50, height: 50}}*/}
-                {/*source={require('./../images/iconMomentanea.PNG')}*/}
-            {/*/>*/}
+            {/* <Image
+                {style={{width: 50, height: 50}}}
+                {source={('./../images/iconMomentanea.PNG')}}
+            /> */}
 
             <Text style={styles.LogoText}>Meu Bichinho</Text>
 

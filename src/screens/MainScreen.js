@@ -5,7 +5,7 @@ import Publicacoes from '../components/Publicacoes'
 import Carteirinha from '../components/Carteirinha'
 import Configuracoes from '../components/Configuracoes'
 import Home from '../components/Home'
-import CamComponent from '../components/CamComponent'
+// import CamComponent from '../components/CamComponent'
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 
@@ -29,15 +29,15 @@ export default createMaterialBottomTabNavigator({
             )
         }
     },
-    CamComponent: {
-        screen: CamComponent,
-        navigationOptions: {
-            tabBarLabel: 'Cam Component',
-            tabBarIcon:({tintColor}) => (
-                <Icon name="calendar" color={tintColor} size={24}></Icon>
-            )
-        }
-    },
+    // CamComponent: {
+    //     screen: CamComponent,
+    //     navigationOptions: {
+    //         tabBarLabel: 'Cam Component',
+    //         tabBarIcon:({tintColor}) => (
+    //             <Icon name="calendar" color={tintColor} size={24}></Icon>
+    //         )
+    //     }
+    // },
     Carteirinha: {
         screen: Carteirinha,
         navigationOptions: {
